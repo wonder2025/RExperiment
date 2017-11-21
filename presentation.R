@@ -1,6 +1,7 @@
 library(ggplot2)
 data(Salaries,package="car")
 dim(Salaries)
+
 #fill=rank：以rank进行分组，alpha=.3：图形的透明度
 ggplot(Salaries,aes(x=salary,fill=rank))+ 
   geom_density(alpha=.3)
