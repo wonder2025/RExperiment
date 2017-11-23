@@ -25,6 +25,10 @@ pc
 fit.km<-kmeans(pc$scores,3,nstart = 100)
 gnd<-gnd[1:33,]
 ct.km<-table(gnd,fit.km$cluster)
+ct.km
 library(flexclust)
 randIndex1<-randIndex(ct.km,correct = FALSE)#0.161
 randIndex1
+library(caret)
+covtypeConfusionMatrix <- confusionMatrix(fit.km$cluster, gnd)
+covtypeConfusionMatrix
