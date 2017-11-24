@@ -59,3 +59,7 @@ hat.plot<-function(fun4){
 hat.plot(fun4)
 detach(iris)
 
+
+#P163简单线性回归
+fit<-lm(weights = height,data=women)
+summary(fit)
