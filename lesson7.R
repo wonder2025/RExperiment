@@ -8,3 +8,6 @@ pc
 pc<-principal(adenocarcinoma_2_11,nfactors = 2,rotate = "varimax" ,scores = TRUE)
 pc
 pc$score
+
+
+#######################考试#######################
